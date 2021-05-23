@@ -1,0 +1,101 @@
+@media only screen and (max-width: 1024px) {
+  .burger-container {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    z-index: 200;
+    transition: 0.5s ease;
+  }
+
+  .rounded-borders{
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    top: 5em;
+    z-index: 100;
+    transition: 1s ease;
+    padding: 2em;
+  }
+
+  nav a {
+    color: var(--primary);
+    display: block;
+  }
+
+  nav a:hover {
+    color: var(--gray);
+    background-color: inherit;
+    border-radius: 1.5em;
+  }
+
+  .close {
+    transform: translateY(-100%);
+  }
+
+  .hamburger {
+    float: right;
+  }
+
+  .hamburger:hover {
+    background-color: white;
+  }
+
+  button:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2)
+  }
+
+  section {
+    padding: 4em 1em;
+  }
+
+  .row {
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+  }
+
+  .column,
+  .left,
+  .right,
+  .header-left,
+  .header-right {
+    flex: 100%;
+    padding: 1em;
+  }
+
+  .header-left {
+    background-image: url("Mask Group.png");
+    height: 100vh;
+  }
+
+  .header-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+    margin: 20vh 0 0 0;
+    padding: 2em 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .button-container {
+    margin: 0;
+  }
